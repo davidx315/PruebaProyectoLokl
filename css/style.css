@@ -161,7 +161,7 @@ body {
 
   .container-list-heroes{
     width: 100%;
-    background: linear-gradient(#00181c 2%,#283c3b 5%,gray , white);
+    background: linear-gradient(rgb(2, 2, 41) 2%,#283c3b 5%,gray , white);
     opacity: 1;
     
   }
