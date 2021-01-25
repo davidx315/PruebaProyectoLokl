@@ -161,7 +161,7 @@ body {
 
   .container-list-heroes{
     width: 100%;
-    background: linear-gradient(rgb(3, 1, 26) 5%,gray , white);
+    background: linear-gradient(#00181c 2%,#283c3b 5%,gray , white);
     opacity: 1;
     
   }
@@ -251,10 +251,18 @@ body {
 }
 
 
+.tabla-heroes{
+    border-spacing: 20px;
+    text-align:center;
+    width: 100;
+}
+
+
 /* Modal Descripcion de Heroes*/
 
 .modalContainer {
     display: none; 
+    position: relative;
     position: fixed; 
     z-index: 1;
     padding-top: 100px;
@@ -266,24 +274,35 @@ body {
 }
 
 .modalContainer .modal-content {
-    background-color: #fefefe;
+    background: linear-gradient(rgb(92, 2, 2), white,black);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
     margin: auto;
-    padding: 20px;
-    border: 1px solid lightgray;
-    border-top: 10px solid #58abb7;
-    width: 60%;
-}
-
-.modalContainer .close {
-    color: #aaaaaa;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
-}
-
-.modalContainer .close:hover,
-.modalContainer .close:focus {
+    padding: 2%;
+    width: 50%;
+    height: 70%;
     color: #000;
-    text-decoration: none;
+    border-radius: 10px;
+}
+
+.modalContainer .boton-cerrar{
+    background:none;
+    border-color:none;
+    border:none;
+    font-size: 160%;
+    text-align:top;
     cursor: pointer;
+}
+
+.modal-content .imgModal{
+    height: 100%;
+    width:100%;
+    max-width: 65%;
+}
+
+.modal-content .descripcion-modal{
+    width:40%;
+    text-align: right;
+    padding: 0%;
 }
