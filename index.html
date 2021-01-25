@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@1,200&display=swap" rel="stylesheet">
+    <link rel="icon" href="images/iconoLol.jpg" type="image/jpg">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <title>Legue of Legend</title>
+</head>
+<body>
+    <div class="contenedor">
+        <header class="header">
+            <div class="container-menu">
+                <div class="container-logo">
+                    <img src="image/league-of-legends-logo.png" alt=""  style="position: static;"/>
+                </div>
+                <nav class="nav-list">
+                    <ul class="main-menu">
+                        <li class="main-menu__item">
+                            <a href="#Encabezado" class="main-menu__link"><strong><em>Campeones</em></strong></a>
+                        </li>
+                        <li class="main-menu__item">
+                            <a href="#tiposGuitarras" class="main-menu__link"><strong><em>Informacion del Juego</em></strong></a>
+                        </li>
+                        <li class="main-menu__item">
+                            <a href="#noticiasGuitarras" class="main-menu__link"><strong><em>Registrate</em></strong></a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <br>
+            <div class="container-jugar">
+                <h2>ELIGE TU</h2>
+                <h1 class="primer-titulo"><strong>CAMPEÓN</strong></h1>
+                <div class="container-descripcion">
+                    <p class="texto-descripcion"><em>Ya sea que prefieras lanzarte directo a la batalla, apoyar a tus compañeros de equipo o algo intermedio hay un lugar para ti en la Grieta</em></p>
+                    <button class="boton-juego" href="#openModal" >Juega Ahora</button> 
+                                                     
+                </div>                    
+            </div>
+        </header>
+        <main>
+            <div class="contenido-principal">                 
+                <div class="container-list-heroes">
+                    <h2 class="segundo-titulo" ><em>DESCUBRE LOS CAMPEONES</em> </h2> 
+                    <button id="btnModal">Abrir modal</button>  
+                    <div id="myP" class="heroes">
+                            
+                    </div>
+                </div>
+            </div> 
+
+            
+                     
+            <div id="tvesModal" class="modalContainer">
+                <div class="modal-content">
+                    <img src="http://ddragon.leagueoflegends.com/cdn/img/champion/loading/Ahri_0.jpg" alt="">
+                    <span class="close">×</span> <h2>Modal</h2>
+                    <p style="color: black;">Se ha desplegado el modal y bloqueado el scroll del body!</p> 
+                </div>
+            </div>        
+        </main>
+        <footer>
+
+        </footer>
+
+    </div>
+    <script src="./js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,286 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background: #1D1D1F;
+	color: #fff;
+	font-family: 'Oswald', 'Nunito Sans';
+	display: flex;
+	align-items: center;
+}
+
+
+.contenedor{
+	width: 90%;
+	margin: auto;
+}
+
+
+/* Encabezado */
+
+.header{  
+    background-size: 100%;
+    font-size: 110%;
+	padding: 2.5%;
+    width: 100%;
+    background-image: url("../image/header-bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    
+}
+
+.header:before{
+    content: "";
+    position: absolute;
+    background-image: linear-gradient(white,rgb(39, 39, 202),rgb(2, 2, 41));
+    opacity: 0.5;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    
+}
+
+
+.container-menu{
+    height: 60px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    position: relative;
+}
+
+.container-logo{
+    width: 100%;
+    height: inherit;
+    text-align: left;
+}
+
+.nav-list{
+    padding: 0.25em 0;
+    list-style-type: none;
+    text-align: end;
+    width: 100%;
+
+}
+
+.main-menu{
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+    list-style: none;
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    font-size: 160%;
+}
+
+.main-menu__item{
+    line-height: 2;
+    border-right: 1cm;
+}
+
+.main-menu__link{
+    text-decoration: none;
+    display:inline-block;
+    color: white;
+}
+
+.main-menu__link:hover{
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+/* Seccion boton de juego */
+
+.container-jugar{
+    color: white;
+    width:100% ;
+    margin:auto;
+    text-align: center;
+    position: relative;
+    top: 20px;
+
+
+}
+
+.primer-titulo{
+    font-size: 250%;
+}
+
+.container-descripcion{
+    width:46%;
+    font-size: 140%;
+    margin: auto;
+}
+
+.boton-juego{
+    text-decoration: none;
+    padding: 2%;
+    padding-left: 8%;
+    padding-right: 8%;
+    font-weight: 600;
+    font-size: 75%;
+    color: #1f224b;
+    background-color:white;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  .boton-juego:hover{
+    color: white;
+    background-color: gray;
+    font-weight: bold;
+  }
+
+  .container-descripcion h2{
+      position: relative;
+      top: 50px;
+  }
+
+  /* Contenido Principal */
+
+  .contenido-principal {
+	margin-bottom: 5px;
+	align-items: center;
+}
+
+
+  .segundo-titulo{
+      text-align: center;
+      font-size: 200%;
+      position: relative;
+      top: 20px;
+  }
+
+  .container-list-heroes{
+    width: 100%;
+    background: linear-gradient(rgb(3, 1, 26) 5%,gray , white);
+    opacity: 1;
+    
+  }
+
+.heroes{
+    text-align: center;
+    font-weight: bold;
+    justify-content: space-evenly;
+    display:inline-block;
+    position: relative;
+    top: 100px;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+    list-style: none;
+    width: 100%;
+    
+}
+
+.container-heroes{
+    width:100%;
+       
+}
+
+.imgRespuesta{
+    display: block;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    border-top-left-radius:5%;
+    border-top-right-radius:5%;
+    height: 400px;
+    width: 400px;
+}
+
+.container-heroes-descripcion{  
+    color: black;
+    background:#fff;
+    margin-left: auto;
+    margin-right: auto;
+    width: 400px; 
+    padding-bottom: 2%;
+    border-bottom-left-radius:5%;
+    border-bottom-right-radius:5%;
+
+}
+
+.tituloRespuesta{
+    margin:auto;
+    width: 400px;
+    padding-left: 6%;
+    background-color: white;
+    text-align: left;
+    color: black;
+    font-size:180%;
+
+}
+
+
+.parrafoRespuesta{
+    text-align: left;
+    padding-left: 6%;
+    padding-right: 6%;
+    margin:auto;
+    width: 400px;
+    background-color: white;
+    border-bottom-left-radius:5%;
+    border-bottom-right-radius:5%;
+    color: black;
+    font-size:120%;
+}
+
+
+
+.boton-heroes{
+    align-items: left;
+    text-decoration: none;
+    padding: 2%;
+    padding-left: 6%;
+    padding-right: 6%;
+    font-weight: 600;
+    font-size: 100%;
+    color:white;
+    background-color:#00171c;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+
+/* Modal Descripcion de Heroes*/
+
+.modalContainer {
+    display: none; 
+    position: fixed; 
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%; 
+    overflow: auto; 
+}
+
+.modalContainer .modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid lightgray;
+    border-top: 10px solid #58abb7;
+    width: 60%;
+}
+
+.modalContainer .close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.modalContainer .close:hover,
+.modalContainer .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
