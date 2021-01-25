@@ -6,6 +6,9 @@ const implementarHeroes = async () => {
     let columnas = '';
     let contadorGrupo = 0;
     let contadorGeneral = 0;
+
+    /* forEach utilizado para imprimir los heroes y sus modales respectivos en el html */
+
     listadoHeroesArray.forEach((post) => {
         contadorGeneral++;
         contadorGrupo++;
@@ -38,16 +41,18 @@ const implementarHeroes = async () => {
             </div> 
             </td>
         `;
+
+        /* if utilizado para crear filas cada cuatro columnas */ 
         if (contadorGrupo === 4){
             contadorGrupo = 0;
-            filas = filas +`<table class="tabla-heroes"><tr>`+columnas+`</tr></table>`
+            filas = filas +`<tr>`+columnas+`</tr>`
             columnas = ``;
         }else if(contadorGeneral === listadoHeroesArray.length)
         {
-            filas = filas +`<table><tr>`+columnas+`</tr></table>`
+            filas = filas +`<tr>`+columnas+`</tr>`
         }
     });
-    document.getElementById("myHeroes").innerHTML =`<table>`+ filas +`</table>`;
+    document.getElementById("myHeroes").innerHTML =`<table class="tabla-heroes">`+ filas +`</table>`;
     asinarClickModal();   
 };
  
