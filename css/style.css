@@ -3,6 +3,7 @@
 }
 
 body {
+    margin: 0%;
 	background: #1D1D1F;
 	color: #fff;
 	font-family: 'Oswald', 'Nunito Sans';
@@ -150,6 +151,8 @@ body {
 
 
   .segundo-titulo{
+      padding:0%;
+      margin: 0%;
       text-align: center;
       font-size: 200%;
       position: relative;
