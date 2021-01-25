@@ -41,30 +41,6 @@ const ngForFunctionality = async () => {
     });
 
     document.getElementById("myP").innerHTML = value;
-
-
-    listadoHeroesArray.forEach((post) => {
-        cont++;
-        value += `
-            <div id="tvesModal${cont.toString()}" class="modalContainer">
-                <div class="modal-content">
-                    <img  class="" src="https://ddragon.leagueoflegends.com/cdn/img/champion/loading/${post.id}_0.jpg" alt="">
-                    <span class="close"></span>        
-                    <div class="container-heroes-descripcion">
-                        <h2  class="tituloRespuesta">${post.id}</h2>
-                        <p  class="parrafoRespuesta">${post.blurb}</p>
-                        <br>
-                        <p class="parrafoRespuesta">${post.tags}</p>
-                        <br/>
-                        <button>Saber Mas</button>
-                    </div>
-                </div>
-            </div> 
-        `;
-    });
-
-    document.getElementById("myC").innerHTML = value;
-
     asinarClickModal();   
 };
 
