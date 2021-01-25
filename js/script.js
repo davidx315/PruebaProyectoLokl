@@ -67,7 +67,7 @@ const asinarClickModal = () =>{
         let btn     = botones[index];
         let modal   = modales[index];
         let botonesC  = botonesCerrar[index];
-        var body    = document.getElementsByTagName("body")[0];
+        let body    = document.getElementsByTagName("body")[0];
           
         btn.onclick = function() {
             
